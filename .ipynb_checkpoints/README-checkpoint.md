@@ -2,7 +2,7 @@
 
 This repository documents my self-study project focused on building a deep understanding of fundamental Machine Learning (ML), Deep Learning (DL), and Reinforcement Learning (RL) concepts by reading and reimplementing seminal research papers.
 
-**Goal:** To prepare for grad school by moving beyond passive learning and actively engaging with the "why" and "how" of core algorithms.
+**My Goal:** To prepare for grad school by moving beyond passive learning and actively engaging with the "why" and "how" of core algorithms.
 
 **Methodology:**
 
@@ -10,11 +10,11 @@ This repository documents my self-study project focused on building a deep under
 - **Deep Dive:** Thoroughly reading each paper, supported by external resources and note-taking.
 - **Implementation:** Implementing core algorithms from scratch.
 - **Documentation:** Recording notes, insights, challenges, and code.
-- **Reflection:** Writing [blog posts](https://julian.bearblog.dev/) to consolidate learning and share insights.
+- **Reflection:** Writing blog posts (grouped by themes) to consolidate learning and share insights. [Link to Your Blog Here - e.g., My Learning Blog](https://yourblog.example.com)
 
 ## Current Progress & Syllabus
 
-Status Legend: ✅ Done, ⏳ In Progress
+\_Status Legend: ✅ Done, ⏳ In Progress
 
 ---
 
