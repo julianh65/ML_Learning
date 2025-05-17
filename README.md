@@ -15,16 +15,16 @@ This project is a work in progress. Feedback, suggestions, and discussions are w
 | #   | Paper (Year)                          | Implementation Goal                                             | Status |
 | --- | ------------------------------------- | --------------------------------------------------------------- | ------ |
 |  1  | **Back‑propagation** – Rumelhart 1986 | Build a 2‑layer NumPy MLP (sigmoid/tanh) trained with plain SGD | ✅     |
-|  2  | **Weight Decay** – Krogh 1991         | Add L2 regularisation switch and observe over‑fit reduction     |        |
 
 ### Phase 2 - LeNet + Training Fixes and Optimizations
 
-| #   | Paper (Year)                  | Implementation Goal                                       | Status |
-| --- | ----------------------------- | --------------------------------------------------------- | ------ |
-|  3  | **LeNet‑5** – LeCun 1998      | First CNN on MNIST using sigmoid/tanh; feel slow training |        |
-|  4  | **ReLU** – Glorot 2011        | Swap activation to ReLU and compare learning speed        |        |
-|  5  | **Adam** – Kingma 2014        | Plug in Adam optimiser; contrast vs SGD curves            |        |
-|  6  | **Dropout** – Srivastava 2014 | Add dropout layer; track test‑set accuracy boost          |        |
+| #   | Paper (Year)                  | Implementation Goal                                         | Status |
+| --- | ----------------------------- | ----------------------------------------------------------- | ------ |
+|  2  | **LeNet‑5** – LeCun 1998      | First CNN on MNIST using sigmoid/tanh; feel slow training   |        |
+|  3  | **Weight Decay** – Krogh 1991 | Add L2 regularisation switch and observe over‑fit reduction |        |
+|  4  | **ReLU** – Glorot 2011        | Swap activation to ReLU and compare learning speed          |        |
+|  5  | **Adam** – Kingma 2014        | Plug in Adam optimiser; contrast vs SGD curves              |        |
+|  6  | **Dropout** – Srivastava 2014 | Add dropout layer; track test‑set accuracy boost            |        |
 
 ### Phase 3 - Deep CNNs & Stability Tricks
 
