@@ -20,7 +20,7 @@ This project is a work in progress. Feedback, suggestions, and discussions are w
 
 | #   | Paper (Year)                  | Implementation Goal                                         | Status |
 | --- | ----------------------------- | ----------------------------------------------------------- | ------ |
-|  2  | **LeNet‑5** – LeCun 1998      | First CNN on MNIST using sigmoid/tanh; feel slow training   |        |
+|  2  | **LeNet‑5** – LeCun 1998      | First CNN on MNIST using sigmoid/tanh; feel slow training   | ⏳     |
 |  3  | **Weight Decay** – Krogh 1991 | Add L2 regularisation switch and observe over‑fit reduction |        |
 |  4  | **ReLU** – Glorot 2011        | Swap activation to ReLU and compare learning speed          |        |
 |  5  | **Adam** – Kingma 2014        | Plug in Adam optimiser; contrast vs SGD curves              |        |
@@ -65,9 +65,13 @@ This project is a work in progress. Feedback, suggestions, and discussions are w
 | #   | Paper (Year)                           | Implementation Goal                         | Status |
 | --- | -------------------------------------- | ------------------------------------------- | ------ |
 |  26 | **DQN** – Mnih 2015                    | CartPole then Pong with replay & target net |        |
-|  27 | **A3C / A2C** – Mnih 2016 ＊           | Actor‑critic baseline on CartPole           |        |
+|  27 | **A3C / A2C** – Mnih 2016              | Actor‑critic baseline on CartPole           |        |
 |  28 | **PPO** – Schulman 2017                | Implement PPO; compare stability vs A2C     |        |
 |  29 | **DDPG** – Lillicrap 2016              | Continuous control (Pendulum)               |        |
 |  30 | **Soft Actor‑Critic** – Haarnoja 2018  | SAC on LunarLanderContinuous                |        |
 |  31 | **Hand‑Eye Grasping** – Levine 2016    | Reproduce small sim grasp task              |        |
 |  32 | **Domain Randomization** – Tobin 2017  | Apply simple sim‑to‑real randomisations     |        |
+
+### Phase 7 - Projects
+
+Kind of want to train a chess engine :)
