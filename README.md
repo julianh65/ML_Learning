@@ -26,6 +26,8 @@ This project is a work in progress. Feedback, suggestions, and discussions are w
 |  5  | **Adam** – Kingma 2014        | Plug in Adam optimiser; contrast vs SGD curves              |        |
 |  6  | **Dropout** – Srivastava 2014 | Add dropout layer; track test‑set accuracy boost            |        |
 
+**\*Switch to PyTorch from here**
+
 ### Phase 3 - Deep CNNs & Stability Tricks
 
 | #   | Paper (Year)                  | Implementation Goal                          | Status |
