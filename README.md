@@ -10,6 +10,8 @@ Status Legend: ✅ Done, ⏳ In Progress
 
 This project is a work in progress. Feedback, suggestions, and discussions are welcome!
 
+For the sake of time some papers will just be a read and not a reimplement. I've noted which ones in the implementation goal.
+
 ### Phase 1 - Core Learning Mechanics
 
 | #   | Paper (Year)                          | Implementation Goal                                             | Status |
@@ -50,7 +52,7 @@ This project is a work in progress. Feedback, suggestions, and discussions are w
 |  17 | **ViT** – Dosovitskiy 2020             | Patchify CIFAR‑10; train mini Vision Transformer    |        |
 |  18 | **Mixture‑of‑Experts** – Shazeer 2017  | Replace MLP block with sparse MoE; inspect capacity |        |
 |  19 | **Mamba** – Gu 2024                    | Read & prototype simple SSM layer                   |        |
-|  20 | **FlashAttention** – Dao 2022          | Integrate flash‑attn kernel or read for context     |        |
+|  20 | **FlashAttention** – Dao 2022          | \*Read and make notes only                          |        |
 |  21 | **LoRA** – Hu 2021                     | Implement low‑rank adapters; quick BERT fine‑tune   |        |
 
 ### Phase 5 - Generative Models
@@ -69,10 +71,10 @@ This project is a work in progress. Feedback, suggestions, and discussions are w
 |  26 | **DQN** – Mnih 2015                    | CartPole then Pong with replay & target net |        |
 |  27 | **A3C / A2C** – Mnih 2016              | Actor‑critic baseline on CartPole           |        |
 |  28 | **PPO** – Schulman 2017                | Implement PPO; compare stability vs A2C     |        |
-|  29 | **DDPG** – Lillicrap 2016              | Continuous control (Pendulum)               |        |
+|  29 | **DDPG** – Lillicrap 2016              | \*Read and make notes only                  |        |
 |  30 | **Soft Actor‑Critic** – Haarnoja 2018  | SAC on LunarLanderContinuous                |        |
-|  31 | **Hand‑Eye Grasping** – Levine 2016    | Reproduce small sim grasp task              |        |
-|  32 | **Domain Randomization** – Tobin 2017  | Apply simple sim‑to‑real randomisations     |        |
+|  31 | **Hand‑Eye Grasping** – Levine 2016    | \*Read and make notes only                  |        |
+|  32 | **Domain Randomization** – Tobin 2017  | \*Read and make notes only                  |        |
 
 ### Phase 7 - Projects
 
