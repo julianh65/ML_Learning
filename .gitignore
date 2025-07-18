@@ -3,6 +3,7 @@ venv/
 env/
 ENV/
 *.env
+.ipynb_checkpoints/
 
 __pycache__/
 *.pyc
