@@ -32,34 +32,33 @@ For the sake of time some papers will just be a read and not a reimplement. I've
 
 ### Phase 3 - RL Foundations (Policy & Value)
 
-| #   | Paper (Year)                   | Implementation Goal                                                          | Status |
-| --- | ------------------------------ | ---------------------------------------------------------------------------- | ------ |
-|  7  | **REINFORCE** – Williams 1992  | Implement a tiny policy‑gradient agent on CartPole; derive the gradient once |        |
-|  8  | **DQN** – Mnih 2015            | Implement on CartPole → optional Pong; replay buffer + target network        |        |
-|  9  | **GAE** – Schulman 2015        | Read and make notes; integrate the estimator inside PPO                      |        |
-| 10  | **TRPO** – Schulman 2015       | Read only; understand KL constraint and motivation for PPO                   |        |
-| 11  | **PPO** – Schulman 2017        | Full PyTorch implementation with GAE; CartPole → LunarLander                 |        |
-| 12  | **A2C (from A3C)** – Mnih 2016 | Optional micro‑implementation by simplifying PPO (no clipping, sync update)  |        |
+| #   | Paper (Year)                   | Implementation Goal                                                         | Status |
+| --- | ------------------------------ | --------------------------------------------------------------------------- | ------ |
+|  7  | **DQN** – Mnih 2015            | Implement on CartPole → optional Pong; replay buffer + target network       |        |
+|  8  | **GAE** – Schulman 2015        | Read and make notes; integrate the estimator inside PPO                     |        |
+| 9   | **TRPO** – Schulman 2015       | Read only; understand KL constraint and motivation for PPO                  |        |
+| 10  | **PPO** – Schulman 2017        | Full PyTorch implementation with GAE; CartPole → LunarLander                |        |
+| 11  | **A2C (from A3C)** – Mnih 2016 | Optional micro‑implementation by simplifying PPO (no clipping, sync update) |        |
 
 ### Phase 4 - Off‑Policy Continuous Control
 
 | #   | Paper (Year)                          | Implementation Goal                                          | Status |
 | --- | ------------------------------------- | ------------------------------------------------------------ | ------ |
-| 13  | **DDPG** – Lillicrap 2016             | Read and make notes only                                     |        |
-| 14  | **TD3** – Fujimoto 2018               | Read and make notes only; note twin critics and target noise |        |
-| 15  | **Soft Actor‑Critic** – Haarnoja 2018 | Implement SAC on LunarLanderContinuous (or Pendulum)         |        |
+| 12  | **DDPG** – Lillicrap 2016             | Read and make notes only                                     |        |
+| 13  | **TD3** – Fujimoto 2018               | Read and make notes only; note twin critics and target noise |        |
+| 14  | **Soft Actor‑Critic** – Haarnoja 2018 | Implement SAC on LunarLanderContinuous (or Pendulum)         |        |
 
 ### Phase 5 - Scaling RL Systems & Tooling
 
 | #   | Paper / Item                                    | Implementation Goal                                                  | Status |
 | --- | ----------------------------------------------- | -------------------------------------------------------------------- | ------ |
-| 16  | **Prioritized Experience Replay** – Schaul 2015 | Read only; optional DQN add‑on later                                 |        |
-| 17  | **IMPALA** – Espeholt 2018                      | Read only; diagram actor–learner split and V‑trace corrections       |        |
-| 18  | **Ape‑X** – Horgan 2018                         | Read only; replay server pattern; contrast with IMPALA               |        |
-| 19  | **R2D2** – Kapturowski 2019                     | Read only; recurrent replay, burn‑in sequences                       |        |
-| 20  | **SEED RL** – Espeholt 2019                     | Read only; latency and TPU considerations                            |        |
-| 21  | **RLlib & Flow (frameworks)**                   | Run RLlib PPO/SAC tutorials; inspect configs. Flow is a stretch goal |        |
-| 22  | **Mini distributed PPO/SAC (no paper)**         | Later task: rollout workers + learner via Ray/torch.multiprocessing  |        |
+| 15  | **Prioritized Experience Replay** – Schaul 2015 | Read only; optional DQN add‑on later                                 |        |
+| 16  | **IMPALA** – Espeholt 2018                      | Read only; diagram actor–learner split and V‑trace corrections       |        |
+| 17  | **Ape‑X** – Horgan 2018                         | Read only; replay server pattern; contrast with IMPALA               |        |
+| 18  | **R2D2** – Kapturowski 2019                     | Read only; recurrent replay, burn‑in sequences                       |        |
+| 19  | **SEED RL** – Espeholt 2019                     | Read only; latency and TPU considerations                            |        |
+| 20  | **RLlib & Flow (frameworks)**                   | Run RLlib PPO/SAC tutorials; inspect configs. Flow is a stretch goal |        |
+| 21  | **Mini distributed PPO/SAC (no paper)**         | Later task: rollout workers + learner via Ray/torch.multiprocessing  |        |
 
 ### Phase 6 - Multi‑Agent RL
 
