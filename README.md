@@ -34,7 +34,7 @@ For the sake of time some papers will just be a read and not a reimplement. I've
 
 | #   | Paper (Year)                   | Implementation Goal                                                         | Status |
 | --- | ------------------------------ | --------------------------------------------------------------------------- | ------ |
-|  7  | **DQN** – Mnih 2015            | Implement on CartPole → optional Pong; replay buffer + target network       |        |
+|  7  | **DQN** – Mnih 2015            | Implement on CartPole → optional Pong; replay buffer + target network       | ⏳     |
 |  8  | **GAE** – Schulman 2015        | Read and make notes; integrate the estimator inside PPO                     |        |
 | 9   | **TRPO** – Schulman 2015       | Read only; understand KL constraint and motivation for PPO                  |        |
 | 10  | **PPO** – Schulman 2017        | Full PyTorch implementation with GAE; CartPole → LunarLander                |        |

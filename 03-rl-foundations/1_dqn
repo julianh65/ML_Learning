@@ -1,0 +1,100 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "6e0849a0-f36b-4218-afa0-49d127e519e5",
+   "metadata": {},
+   "source": [
+    "# Notes\n",
+    "\n",
+    "### Introduction\n",
+    "\n",
+    "The idea is that we can use neural networks in combination with Q-Learning to create agents that are really good at Atari games. This paper shows how a CNN can learn successful control policies from raw data. Network is trained with a variant of the Q-learning algorithm and uses SGD to train network.\n",
+    "\n",
+    "They also use an experience replay to stabalize the learning process.\n",
+    "\n",
+    "**Aside: A quick summary first of what Q-learning is before we dive into the paper:**\n",
+    "\n",
+    "<blockquote>\n",
+    "\n",
+    "The goal of our agent is to maximize its reward. At each time step the agent, in a state, chooses an action, which brings it to a new state. The new state then gives the agent some reward. In this case the reward is the change in score of the game. The agent wants to learn a policy $\\pi$ that lets it choose actions that maximize its reward.\n",
+    "\n",
+    "Agents don't necessarily just care about immediate reward after the next action. It cares about the overall reward it gets in total. So an action that doesn't necessarily immediately lead to a reward could still be desired if it leads to a decent reward down the line.\n",
+    "\n",
+    "This is how we calculate the reward it gets. We sum up all the rewards it gets across it's entire life.\n",
+    "\n",
+    "$R_t = r_t + \\gamma r_{t+1} + \\gamma^2 r_{t+2} + \\gamma^3 r_{t+3} + \\dots = \\sum_{k=0}^{\\infty} \\gamma^k r_{t+k}$\n",
+    "\n",
+    "Gamma is the discount factor. We want to weight it such that rewards we get far down the line in the future are worth less to us than immediate rewards now.\n",
+    "\n",
+    "Quick aside thought experiment:\n",
+    "\n",
+    "In what cases could you set the discount factor to be 1 (no discount) and have it be okay / not break evreything?\n",
+    "\n",
+    "I think for tasks that have guaranteed terminal states if you have a perfect Q function that satisfies the bellman equation you could set the discount to be 1, maybe if you have a perfect Q function in a game of chess. But if you have a continuous task like balancing a pole or something then it won't work as you could have infinite future steps, meaning that every viable path can lead to an infinite return.\n",
+    "\n",
+    "We see that the total future reward is a sum of all the rewards we get over all time steps, with future rewards being discounted more than near ones.\n",
+    "\n",
+    "The main idea of Q-learning is to learn a function called the action-value function denoted Q(s,a). This represents the max possible future return an agent can get if it starts in states s, takes action a, and then plays optimally after that.\n",
+    "\n",
+    "Obviously for most cases we can't get the perfect Q function.\n",
+    "\n",
+    "To see how the Q function can be computed we use the bellman equation. The bellman equation is a recursive equation that expresses the value of a state in terms of the value of it's sucessor states.\n",
+    "\n",
+    "Q-learning is the iterative algorithm that finds the Q-function by trying to satisfy the bellman equation. If the bellman equation is true for all states and actions then that is the optimal Q-function.\n",
+    "\n",
+    "So the bellman equation tells us what the answer should look like, but it doesn't tell us how to find it.\n",
+    "\n",
+    "The process of finding it is as follows:\n",
+    "\n",
+    "We start with a wrong Q-function, either all the values are zero or are random, we repeatedly update it to make it more correct.\n",
+    "\n",
+    "After the agent is in a state and performs an action, we know two important things. The immediate reward we just got, and the next state. Now, we have two estimates for a value in the Q function from the state we started in. We have the one from our Q-function, and we have one we can compute now using the bellman equation, the reward we just got + the best possible reward we can get from this new next state.\n",
+    "\n",
+    "What we want to do with this information is to update our old estimate from our Q-function so that it's closer to the new value we just got (that is likely more accurate).You keep doing this until the Q-values are adjusted until it converges and satisfies the bellman equation (or as much as possible), then we have the optimal way to play the game by just using our Q-function to look up the best action to take that gives us the biggest reward.\n",
+    "</blockquote>\n",
+    "\n",
+    "Okay so back to the paper.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b1ed8b87-ac35-4beb-9a28-f0c25d19c27d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# I should set up and train one on something from scratch"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b156015e-26b8-4de4-b3c5-ff1858372c73",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python (ML Learning)",
+   "language": "python",
+   "name": "ml_learning"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
